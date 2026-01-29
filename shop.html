@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All | LUMORA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="fade-in">
+    <header>
+        <div class="top-bar">Vegan - 100% cruelty-free & plant-powered | Dermat Tested</div>
+        <nav>
+            <div class="logo">LUMORA
+                <p>GLOW WITH NATURE</p>
+            </div>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="why.html">Why LUMORA</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-icons">
+                <i class="fa-solid fa-search"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail-container">
+        <div class="product-detail-wrapper">
+            <div class="gallery-container">
+                <div class="main-image-box">
+                    <button class="nav-arrow prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <img src="https://indiaskincare.lovable.app/assets/product-serum-B8X7qLei.png" id="mainImg"
+                        alt="Radiance Serum">
+                    <button class="nav-arrow next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="product-info-panel">
+                <h1 class="product-title">Radiance Serum</h1>
+
+                <div class="rating-row">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span class="review-count">4.7 (89 reviews)</span>
+                </div>
+
+                <div class="price-row">
+                    <span class="current-price">₹1,299</span>
+                    <span class="old-price">₹1,599</span>
+                    <span class="discount-tag">19% OFF</span>
+                </div>
+
+                <p class="product-description">
+                    A potent vitamin C serum that targets dark spots, uneven skin tone, and dullness.
+                    This fast-absorbing formula delivers visible brightness in just 2 weeks.
+                    Suitable for all skin types.
+                </p>
+
+                <div class="selection-group">
+                    <h3>Select Size</h3>
+                    <div class="size-options">
+                        <button class="size-btn active">15ml</button>
+                        <button class="size-btn">30ml</button>
+                    </div>
+                </div>
+
+                <div class="purchase-actions">
+                    <div class="quantity-control">
+                        <button onclick="changeQty(-1)">-</button>
+                        <input type="number" value="1" id="qty-input" readonly>
+                        <button onclick="changeQty(1)">+</button>
+                    </div>
+                    <button class="main-add-btn">Add to Cart</button>
+                    <button class="wishlist-round-btn" onclick="toggleHeart(this)">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <h2>Customer <span>Reviews</span></h2>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="user-info">
+                    <strong>Ananya S.</strong>
+                    <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <p>"Literally gave me the glow I've been looking for! It absorbs so fast and doesn't feel sticky at all."
+            </p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="user-info">
+                    <strong>Priya K.</strong>
+                    <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <p>"Perfect for my sensitive skin. I've noticed my dark spots fading after just 10 days of use."</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="user-info">
+                    <strong>Rohan M.</strong>
+                    <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+            <p>"Bought this for my wife, but I ended up using it too. Great scent and very hydrating."</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="user-info">
+                    <strong>Sanya V.</strong>
+                    <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <p>"The best serum in this price range. Lumora really nailed the formula for Indian humidity!"</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="logo">LUMORA</h2>
+                <p>Glow-enhancing, skin-loving beauty for every skin tone. Cruelty-free. Vegan.</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Shop All</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Ingredients</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i> hello@lumora.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Mumbai, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 LUMORA. All rights reserved. | Made with <i class="fa-solid fa-heart"></i> for Indian skin |
+                Developed by <a href="https://www.linkedin.com/feed/">Confidence Mmesoma.</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+</html>
